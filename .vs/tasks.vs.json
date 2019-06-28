@@ -1,0 +1,23 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-_vars",
+      "appliesTo": "assets/sass/libs/_vars.scss",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-main",
+      "appliesTo": "assets/sass/main.scss",
+      "type": "launch",
+      "outDir":"assets/css/"
+    },
+    {
+      "taskName": "task-main",
+      "appliesTo": "assets/sass/main.scss",
+      "type": "launch",
+      "outDir":"assets/css/"
+
+    }
+  ]
+}
