@@ -1,0 +1,85 @@
+/* our-services */
+
+.our-services {
+  margin: (_size(element-margin) * 1.25) 0;
+  width: 100%;
+
+  @include flexgrid(
+    (
+      columns: 3,
+      gutters: 3rem,
+      vertical-align: stretch
+    )
+  );
+
+  .content {
+    border-radius: _size(border-radius);
+    height: 100%;
+    padding: 3rem;
+    text-align: center;
+
+    .title {
+      font-size: 1.75rem;
+    }
+    i {
+     font-size: 5em;
+    }
+    p {
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  > div {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint("<=medium") {
+    @include flexgrid-resize(
+      (
+        columns: 2,
+        gutters: 2rem,
+        prev-columns: 3
+      )
+    );
+
+    .content {
+      padding: 2rem;
+    }
+  }
+
+  @include breakpoint("<=small") {
+    @include flexgrid-resize(
+      (
+        columns: 1,
+        gutters: 2rem,
+        prev-columns: (
+          3,
+          2
+        )
+      )
+    );
+  }
+}
+
+@mixin color-our-services($p: null) {
+  $highlight: _palette($p, highlight);
+
+  .our-services {
+    .content {
+      background: _palette($p, bg);
+      box-shadow: 0px 0px 4px 1px _palette($p, border-lt);
+
+      .title {
+        strong {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@include color-our-services;
