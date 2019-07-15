@@ -1,4 +1,4 @@
-@import url(c:\Projects\Transform365\assets\sass\font-awesome.min.css);
+@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 /*
 	Industrious by TEMPLATED
@@ -2409,7 +2409,6 @@ ul.icons li .icon:before {
   -ms-justify-content: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-image: url("../../images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3267,7 +3266,6 @@ body {
 
 body:before {
   content: ' ';
-  background-image: url(../../images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3406,8 +3404,6 @@ body:before {
   -ms-justify-content: center;
   -webkit-box-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.25)), to(rgba(17, 17, 17, 0.25))), url("../../images/banner.jpg");
-  background-image: linear-gradient(rgba(17, 17, 17, 0.25), rgba(17, 17, 17, 0.25)), url("../../images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
